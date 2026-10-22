@@ -1,0 +1,5 @@
+DEFINE TABLE {{db_name}}.{{schema_name}}.EMPLOYEE (
+    EMP_ID NUMBER, 
+    EMP_NAME VARCHAR(100), 
+    DESIGNATION VARCHAR(100) 
+); 

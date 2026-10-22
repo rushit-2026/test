@@ -1,0 +1,22 @@
+manifest_version: 2 
+type: DCM_PROJECT 
+
+default_target: DEV 
+
+targets: 
+  DEV: 
+    account_identifier: OFG-DS 
+    project_name: OFG_DEV.TEMP_BASE_SILVER.TEST_DCM 
+    project_owner: SNOWFLAKE_DEVELOPER_DEV 
+    templating_config: DEV 
+
+templating: 
+  defaults: 
+    project_owner_role: "ACCOUNTADMIN" 
+    wh_size: "SMALL" 
+
+  configurations: 
+    DEV: 
+      env_suffix: "_TEST_DCM" 
+      db_name: 'USER$RUSHIKESH'
+      schema_name: 'LEARNING'
